@@ -2,7 +2,9 @@
 
 <h2>Introduction</h2>
 Home automation involves control or automation of home, housework or household activity. Home automation may include centralized control of lighting, HVAC (heating, ventilation and air conditioning), appliances, security locks of gates and doors and other systems, to provide improved convenience, comfort, energy efficiency and security.
+
 ![](https://github.com/kukr/Fuzzy-Logic-based-Light-Intensity-Controller/blob/master/assets/home-automation.png)
+
 Every home automation system consists of a controller which is the central part of the system. The controller takes the input from sensors and according to the input gives signal to actuators which are fixed to the devices to be controlled.
 Fuzzy logic is a form of many-valued logic in which the truth values of variables may be any real number between 0 and 1. By contrast, in Boolean logic, the truth values of variables may only be the "crisp" values 0 or 1. Fuzzy logic has been employed to handle the concept of partial truth, where the truth value may range between completely true and completely false. Furthermore, when linguistic variables are used, these degrees may be managed by specific (membership) functions.
 
@@ -20,7 +22,8 @@ The first two limitations can be solved using Machine Learning and Artificial ne
 
 <h4>Proposed Solution</h4>
 We will try to solve the above limitations using fuzzy logic in our controller for home automation system to make it more adaptive, case sensitive instead of crisp scaling and frequent tunings as in conventional systems. The design of such a controller will also be simplified using fuzzy logic which gives us an added advantage.
-!![](https://github.com/kukr/Fuzzy-Logic-based-Light-Intensity-Controller/blob/master/assets/fuzzy-logic-solution.png)
+
+![](https://github.com/kukr/Fuzzy-Logic-based-Light-Intensity-Controller/blob/master/assets/fuzzy-logic-solution.png)
 
 <h4>Fuzzy logic based Home automation :-</h4>
 In our implementation we will be controlling the three most basic devices which are lights,fan and heater. 
@@ -39,8 +42,8 @@ Automatic Fan control using fuzzy logic.
 </ol> 
 <h4>Final expected outcome of work</h4>
 Working prototype of fuzzy logic based home automation device with following features:
-●	Controlling operation of essential electric home appliances (light bulb, fan etc.)
-●	Efficient software based user interface for interactive control
-●	Wireless control of appliances
-●	Adaptive to environment conditions using sensors
-●	Retuning is not required if the system parameters change with time 
+*	Controlling operation of essential electric home appliances (light bulb, fan etc.)
+*	Efficient software based user interface for interactive control
+*	Wireless control of appliances
+*	Adaptive to environment conditions using sensors
+*	Retuning is not required if the system parameters change with time 
