@@ -41,7 +41,9 @@ Automatic Fan control using fuzzy logic.
 </li>
 </ol> 
 <h4>Final expected outcome of work</h4>
+
 Working prototype of fuzzy logic based home automation device with following features:
+
 *	Controlling operation of essential electric home appliances (light bulb, fan etc.)
 *	Efficient software based user interface for interactive control
 *	Wireless control of appliances
