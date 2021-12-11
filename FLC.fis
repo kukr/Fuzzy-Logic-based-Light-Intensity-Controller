@@ -1,0 +1,57 @@
+[System]
+Name='FLC'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=15
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='change_in_intensity'
+Range=[-1 1]
+NumMFs=3
+MF1='positive':'trapmf',[0 0.5 1.2 1.72]
+MF2='negative':'trapmf',[-1.72 -1.2 -0.5 0]
+MF3='zero':'trimf',[-0.5 0 0.5]
+
+[Input2]
+Name='intensity'
+Range=[-1 1]
+NumMFs=5
+MF1='large_negative':'trapmf',[-1.72 -1.08 -0.92 -0.28]
+MF2='zero':'trimf',[-0.5 0 0.5]
+MF3='large_positive':'trapmf',[0.28 0.92 1.08 1.72]
+MF4='negative':'trimf',[-1 -0.5 0]
+MF5='positive':'trimf',[0 0.5 1]
+
+[Output1]
+Name='change_in_output'
+Range=[-1 1]
+NumMFs=5
+MF1='large_negative':'trapmf',[-1.72 -1.08 -0.92 -0.28]
+MF2='zero':'trimf',[-0.5 0 0.5]
+MF3='large_positive':'trapmf',[0.28 0.92 1.08 1.72]
+MF4='negative':'trimf',[-1 -0.5 0]
+MF5='postive':'trimf',[0 0.5 1]
+
+[Rules]
+3 1, 3 (1) : 1
+2 1, 3 (1) : 1
+1 1, 5 (1) : 1
+2 4, 3 (1) : 1
+3 4, 5 (1) : 1
+1 4, 2 (1) : 1
+2 2, 5 (1) : 1
+1 2, 4 (1) : 1
+3 2, 2 (1) : 1
+3 5, 4 (1) : 1
+2 5, 2 (1) : 1
+1 5, 1 (1) : 1
+1 3, 1 (1) : 1
+2 3, 4 (1) : 1
+3 3, 1 (1) : 1
